@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color change project</title>
+    <style>
+        div#msg {
+            background: rgb(245, 7, 19);
+            width: 500px;
+            height: 400px;
+            margin: 50px auto 50px;
+            font: normal 30pt arial;
+            text-align: left;
+        }
+        
+        div#button {
+            background: black;
+            color: white;
+            font: normal 12pt arial;
+            border-radius: 5px;
+            border-style: none;
+            text-underline-position: auto;
+            width: 200px;
+            height: 50px;
+            margin: 50px auto 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="msg"> The background color will change when the button below is clicked </div>
+    <div id="button" onclick="mudarcor()" onclick="mudarcor1()" onclick="mudarcor2()">
+        <p>Click here!</p>
+    </div>
+
+    <script>
+        let colors = ['red', 'yellow', 'orange', 'pink', 'green']
+
+        function mudarcor() {
+            let bkgr = window.document.querySelector('div#msg')
+            let rcolor = parseInt((Math.random() * colors.length) + 1)
+
+            bkgr.style.background = `${colors[rcolor]}`
+
+        }
+    </script>
+
+</body>
+
+</html>
