@@ -18,6 +18,10 @@
             margin: auto;
             border-radius: 9px;
             box-shadow: 5px 4px 8px 10px rgba(0, 0, 0, 0.823);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
         }
         
         div#buttonQ {
@@ -39,7 +43,6 @@
             margin: 0 auto;
             text-align: center;
             box-shadow: 3px 4px 5px 6px rgba(0, 0, 0, 0.272);
-            ;
         }
     </style>
 </head>
@@ -48,7 +51,7 @@
     <section>
         <div id="buttonQ" onclick="clickchange()" onmouseover="overm()" onmouseout="outm()"> Generate Quote </div>
         <div id="quote">
-            <p> <img id='imgq' src="quote1.png" alt="quote1"></p>
+            <p> <img id='imgq' src="quote1.png" alt="quote6.png"></p>
         </div>
 
 
@@ -58,7 +61,9 @@
         function clickchange() {
             var imgq = window.document.getElementById('imgq')
             var buttonQ = window.document.getElementById('buttonQ')
-            imgq.src = 'quote2.png'
+            let imgs = ['quote1.png', 'quote2.png', 'quote3.png', 'quote4.png', 'quote5.png', 'quote6.png']
+            let rdnimg = parseInt((Math.random() * imgs.length) + 1)
+            imgq.src = `${imgs[rdnimg]}`
             buttonQ.style.background = 'rgb(137, 127, 71)'
         }
 
