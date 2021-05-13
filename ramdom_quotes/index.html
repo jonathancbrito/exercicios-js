@@ -12,41 +12,66 @@
         }
         
         section {
-            background: rgb(251, 255, 6);
+            background: rgb(137, 127, 71);
             width: 700px;
-            height: 600px;
+            height: 350px;
             margin: auto;
+            border-radius: 9px;
+            box-shadow: 5px 4px 8px 10px rgba(0, 0, 0, 0.823);
         }
         
         div#buttonQ {
             text-align: center;
-            background: rgb(0, 0, 0);
-            color: white;
+            background: rgb(251, 222, 2);
+            color: rgb(218, 42, 42);
             width: 250px;
             height: 50px;
             margin: auto;
-            font: normal 16pt arial;
+            font: normal 19pt arial;
             border-radius: 7px;
-            box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.469);
+            box-shadow: 5px 4px 8px 10px rgba(0, 0, 0, 0.823);
         }
         
-        div#text {
-            background: rgb(81, 81, 81);
+        div#quote {
+            background: rgb(251, 222, 2);
             width: 600px;
-            height: 500px;
-            margin: auto;
+            height: 240px;
+            margin: 0 auto;
             text-align: center;
+            box-shadow: 3px 4px 5px 6px rgba(0, 0, 0, 0.272);
+            ;
         }
     </style>
 </head>
 
 <body>
     <section>
-        <div id="buttonQ"> Generate Quote </div>
-        <div id="text"> text </div>
+        <div id="buttonQ" onclick="clickchange()" onmouseover="overm()" onmouseout="outm()"> Generate Quote </div>
+        <div id="quote">
+            <p> <img id='imgq' src="quote1.png" alt="quote1"></p>
+        </div>
 
 
     </section>
+
+    <script>
+        function clickchange() {
+            var imgq = window.document.getElementById('imgq')
+            var buttonQ = window.document.getElementById('buttonQ')
+            imgq.src = 'quote2.png'
+            buttonQ.style.background = 'rgb(137, 127, 71)'
+        }
+
+        function overm() {
+            var overm = window.document.querySelector('div#buttonQ')
+            overm.style.background = 'grey'
+        }
+
+        function outm() {
+            var outm = document.querySelector('div#buttonQ')
+            outm.style.background = 'rgb(251, 222, 2)'
+        }
+    </script>
 
 
 </body>
