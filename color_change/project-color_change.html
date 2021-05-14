@@ -35,7 +35,7 @@
 
 <body>
     <div id="msg"> The background color will change when the button below is clicked </div>
-    <div id="button" onclick="mudarcor()" onclick="mudarcor1()" onclick="mudarcor2()">
+    <div id="button" onclick="mudarcor()" onmouseover="mover()" onmouseout="mout()">
         <p>Click here!</p>
     </div>
 
@@ -46,8 +46,18 @@
             let bkgr = window.document.querySelector('div#msg')
             let rcolor = parseInt((Math.random() * colors.length) + 1)
 
-            bkgr.style.background = `${colors[rcolor]}`
 
+            bkgr.style.background = `${colors[rcolor]}`
+        }
+
+        function mover() {
+            let bt = document.getElementById('button')
+            bt.style.background = 'red'
+        }
+
+        function mout() {
+            let bt = document.getElementById('button')
+            bt.style.background = 'black'
         }
     </script>
 
