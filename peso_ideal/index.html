@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Ideal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div id="title"> PESO IDEAL</div>
+
+        <div id="sex">
+            <strong>Selecione o Gênero:</strong>
+            <input type="radio" name="sex" id="msex" checked>
+            <label for="msex">Masculino</label>
+            <input type="radio" name="sex" id="fsex">
+            <label for="fsex">Feminino</label>
+            <p> <strong>Digite a altura: </strong><input type="number" name="altura" id="altura" min='0'></p>
+            <p> <input type="button" value="VERIFICAR" onclick="checar()"></p>
+        </div>
+        <div id="res"> preencha os dados acima para ver o resultado</div>
+    </section>
+
+    <footer>
+        <strong>&copy; PesoIdeal</strong></footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
