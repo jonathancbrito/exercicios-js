@@ -1,16 +1,25 @@
-body {
-    background: rgb(128, 128, 214);
-}
-
 header {
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 
-div#box {
+section {
+    margin: auto;
+    background: rgb(3, 74, 145);
+    width: 500px;
+    height: 580px;
+    box-shadow: 1px 2px 3px 5px rgba(0, 0, 255, 0.476);
+}
+
+div#txt {
     text-align: center;
     padding: 80px;
+}
+
+input#word {
+    padding: 12px;
 }
 
 div#length {
@@ -19,18 +28,22 @@ div#length {
     font-weight: bold;
     padding: 28px;
     background-color: orange;
-    width: 50px;
-    height: 40px;
+    width: 100px;
+    height: 43px;
     margin: auto;
-    border-radius: 200px;
+    box-shadow: 1px 1px 2px 5px rgba(255, 166, 0, 0.517);
 }
 
 div#but {
     background-color: rgb(228, 0, 0);
-    width: 500px;
-    height: 30px;
+    color: rgb(88, 33, 33);
+    width: 250px;
+    height: 65px;
     margin: auto;
+    margin-top: 150px;
     text-align: center;
     font-size: bold;
     font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 2px 3px 4px 5px rgb(51, 45, 45);
 }
