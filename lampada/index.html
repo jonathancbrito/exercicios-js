@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada</title>
+    <style>
+        .canvas {
+            margin: 50px auto;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        .lightoff {
+            width: 250px;
+            height: 300px;
+            background: url('off.png') no-repeat;
+            margin: auto;
+        }
+        
+        .lighton {
+            background: url('on.png') no-repeat;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="canvas">
+        <h1>Clique na lâmpada para ascender ou apagar</h1>
+        <div id="img" class="lightoff"></div>
+    </div>
+
+    <script>
+        const img = window.document.getElementById("img")
+        img.addEventListener('click', function(e) {
+
+            e.target.classList.toggle('lighton')
+        })
+    </script>
+</body>
+
+
+
+</html>
