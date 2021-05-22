@@ -16,23 +16,22 @@
             text-align: center;
             background: grey;
             text-align: center;
-            width: 400px;
+            width: 300px;
         }
         
         div#box {
-            background: white;
+            background: rgb(255, 225, 2);
             width: 500px;
             height: 150px;
             font-size: xx-large;
             margin: auto;
             padding: 2px;
-            color: rgb(58, 255, 4);
-        }
-        
-        div#day {
-            text-align: center;
-            margin: auto;
-            color: rgb(18, 193, 24);
+            color: rgb(0, 0, 0);
+            box-shadow: 1px 1px 13px 5px red;
+            font: normal 23pt arial;
+            font-style: italic;
+            border-radius: 8px;
+            padding: 40px;
         }
     </style>
 </head>
@@ -70,8 +69,9 @@
                 day = 'Saturday'
                 break;
         }
-        box.innerHTML = `192.168.15.1.1`
+        box.innerHTML = `01010100 01001111 01000100 01000001 01011001 00100000 01001001 01010011`
         box.innerHTML += `<p>${day}</p>`
+        box.style.color = 'grey'
     </script>
 </body>
 
