@@ -19,32 +19,59 @@
             width: 400px;
         }
         
-        div#date {
+        div#box {
             background: white;
             width: 500px;
             height: 150px;
             font-size: xx-large;
             margin: auto;
             padding: 2px;
+            color: rgb(58, 255, 4);
         }
         
         div#day {
             text-align: center;
             margin: auto;
-            color: green;
+            color: rgb(18, 193, 24);
         }
     </style>
 </head>
 
 <body>
     <section>
-        <div id="date">TODAY IS
-            <p> date</p>
-        </div>
+        <div id="box"></div>
     </section>
 
     <script>
-        var day
+        var box = window.document.getElementById('box')
+        var now = new Date()
+        var day = now.getDay()
+
+        switch (day) {
+            case 0:
+                day = 'Sunday'
+                break;
+            case 1:
+                day = 'Monday'
+                break;
+            case 2:
+                day = 'Tuesday'
+                break;
+            case 3:
+                day = 'Wednesday'
+                break;
+            case 4:
+                day = 'Thurday'
+                break;
+            case 5:
+                day = 'Friday'
+                break;
+            case 6:
+                day = 'Saturday'
+                break;
+        }
+        box.innerHTML = `192.168.15.1.1`
+        box.innerHTML += `<p>${day}</p>`
     </script>
 </body>
 
