@@ -42,36 +42,36 @@
     </section>
 
     <script>
-        var box = window.document.getElementById('box')
-        var now = new Date()
-        var day = now.getDay()
+        var box = window.document.getElementById('box');
+        var now = new Date();
+        var day = now.getDay();
 
         switch (day) {
             case 0:
-                day = 'Sunday'
+                day = 'Sunday';
                 break;
             case 1:
-                day = 'Monday'
+                day = 'Monday';
                 break;
             case 2:
-                day = 'Tuesday'
+                day = 'Tuesday';
                 break;
             case 3:
-                day = 'Wednesday'
+                day = 'Wednesday';
                 break;
             case 4:
-                day = 'Thurday'
+                day = 'Thurday';
                 break;
             case 5:
-                day = 'Friday'
+                day = 'Friday';
                 break;
             case 6:
-                day = 'Saturday'
+                day = 'Saturday';
                 break;
         }
         box.innerHTML = `01010100 01001111 01000100 01000001 01011001 00100000 01001001 01010011`
         box.innerHTML += `<p>${day}</p>`
-        box.style.color = 'grey'
+        box.style.color = 'grey';
     </script>
 </body>
 
